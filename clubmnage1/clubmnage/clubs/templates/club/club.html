@@ -1,0 +1,38 @@
+{% extends 'club/layout/main.html' %}
+{% load static %}
+{% block title %}
+  Club
+{% endblock title %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="container-fluid clublogobar">
+        <a><img class="imgloo"  src="{% static 'images/club1.png' %}" alt="image" width="180" height="150"></a>
+        <div class="text">
+        <h1 style="color:rgba(21, 64, 124, 0.83) " >பென்னாகரம் அரசு கலை மற்றும் அறிவியல் கல்லூரி</h1>
+            <h2 style="color:rgba(22, 134, 111, 0.83)">கிளப் பட்டியல்கள்</h2>
+        </div>
+    </div>
+
+
+<div class="container-fluid clbback">
+    <div class="row">
+        
+            {% for club in club %}
+          
+             <div class="card car my-5 index-card">
+              <img src="{{ club.logo.url }}" alt="image" class="custom_img">
+              <div class="card-body">
+                <a href="{% url 'members' club.club_name %}">
+                <br>
+               <p class="card-text desc">{{ club.club_name }}</p>
+              </div>
+             </a>
+             </div>
+             
+          
+          {% endfor %}
+        
+    </div>
+</div>
+{% endblock content %}

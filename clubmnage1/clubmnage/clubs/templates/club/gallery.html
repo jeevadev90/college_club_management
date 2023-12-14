@@ -1,0 +1,40 @@
+{% extends 'club/layout/main.html' %}
+{% load static %}
+{% block title %}
+  Albems
+{% endblock title %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="container-fluid albems">
+        
+        <div class="text">
+        <h1 style="color:rgba(21, 64, 124, 0.83) " >ALBEMS</h1>
+           
+        </div>
+    </div>
+    <hr class="abline">
+
+<div class="container-fluid albback">
+    <div class="row">
+        
+            {% for clb in clb %}
+          
+             <div class="card cars my-5 index-card">
+              <img src="{{ clb.logo.url }}" alt="image" class="custom_imgs">
+              <div class="card-body">
+                <a href="{% url 'imgesss' clb.club_name %}">
+                <br>
+               <p class="card-text desc">{{ clb.club_name }}</p>
+                </a>
+              </div>
+             </a>
+             </div>
+             
+          
+          {% endfor %}
+        
+    </div>
+</div>
+{% endblock content %}
+<a href="#"> <button class="btn newadd" type="submit">Add</button></a>

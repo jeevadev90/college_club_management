@@ -1,0 +1,31 @@
+{% extends 'club/layout/main.html' %}
+{% load static %}
+{% block title %}
+  Albems
+{% endblock title %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="container-fluid albems">
+        
+        <div class="albstexts">
+        <h1 style="color:rgba(21, 64, 124, 0.83) " >PHOTOS</h1>
+           
+        </div>
+    </div>
+
+<hr class="hrline">
+<div class="container">
+    <div class="row">
+        <div class="card imgcard">
+            {% for clbs in pts %}
+            <div class="pts">
+             <img src="{{ clbs.galimage.url }}" class="photos" alt="image" class="albm">
+            </div>
+          
+          {% endfor %}
+          </div>
+    </div>
+</div>
+{% endblock content %}
+<a href="#"> <button class="btn newadd" type="submit">Add</button></a>

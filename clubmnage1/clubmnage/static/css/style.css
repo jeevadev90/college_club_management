@@ -1,0 +1,186 @@
+/* index page css */
+.imggg{
+   width: 100%;
+}
+
+.abtn{
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+}
+.btnclb{
+    height: 50px;
+    width: 100px;
+    background-color: rgb(133, 186, 168);
+    border: none;
+    border-radius: 5px;
+   
+}
+.detailsbox{
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+.heads{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px;
+    
+    
+}
+
+
+.clublogobar{
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px; 
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+.titles{
+    flex-grow: 1;
+}
+
+
+
+
+
+
+/* club page css code */
+.clbback{
+    background-color: rgba(255, 255, 255, 0.567);
+}
+.clublogobar{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px; 
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 5px 0px;
+}
+
+.text{
+    flex-grow: 1;
+    
+}
+.car {
+   width: max-content;
+   height: 350px;
+   margin-left: 20px;
+   background-color: rgba(64, 85, 85, 0.607);
+   border-radius: 9px;
+   border: none;
+   
+}
+.desc{
+    color: rgb(39, 40, 40);
+    font-weight: bolder;
+    
+}
+.custom_img{
+    margin-top: 10px;
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    background-color: #ffffffdc;
+    border-radius: 6px;
+}
+
+/* members page css code */
+
+.newadd{
+    border: 0px;
+    color: rgba(36, 159, 38, 0.804);
+    border-radius: 5px;
+
+}
+
+.edit{
+    border: 0px;
+    color: rgba(37, 12, 164, 0.804);
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+/* about page css code */
+
+.about_head{
+    color: #34094aec;
+    
+}
+.aboutline{
+    border: 2px solid sienna;
+}
+.head{
+    text-align: center;
+    margin-top: 50px;
+}
+.content{
+    padding: 50px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.416);
+    border-radius: 5px;
+}
+
+/* gallery page css code */
+
+.cars {
+    width: max-content;
+    height: 350px;
+    margin-left: 20px;
+    background-color: rgba(39, 98, 156, 0.584);
+    border-radius: 8px;
+    border: none;
+ }
+ 
+ .custom_imgs{
+     width: 100%;
+     height: 60%;
+     object-fit: cover;
+     background-color: #092a2ddc;
+     margin-top: 10px;
+     border-radius: 6px;
+ }
+.albback{
+    background-color: rgba(226, 226, 237, 0.704);
+}
+.albstexts{
+    text-align: center;
+}
+.albems{
+    padding-top: 20px;
+    text-align: center;
+}
+.abline{
+    border: 2px solid rgb(9, 14, 48);   
+}
+
+/* imagess page css code */
+
+.pts{
+    padding: 20px;
+    margin-top: 30px;
+}
+.imgcard{
+    width: max-content;
+    height: 400px;
+    margin-left: 10px;
+}
+.albm{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    background-color: #092a2ddc;
+}
+.hrline{
+   
+    border: 2px solid green;
+   
+}
+
+

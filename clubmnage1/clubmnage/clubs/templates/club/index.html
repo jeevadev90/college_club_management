@@ -1,0 +1,43 @@
+{% extends 'club/layout/main.html' %}
+{% load static %}
+{% block title %}
+  Home
+{% endblock title %}
+
+{% block content %}
+<div class="container-fluid home">
+  <div class="container-fluid clublogobar">
+    <a><img class="imgloo" src="{% static 'images/logo.jpg' %}" alt="image" width="180" height="150"></a>
+    <div class="text">
+    <h1 style="color:rgba(21, 64, 124, 0.83) " >பென்னாகரம் அரசு கலை மற்றும் அறிவியல் கல்லூரி</h1>
+        <h2 style="color:rgba(22, 134, 111, 0.83)">பென்னாகரம், தர்மபுரி - 636803</h2>
+    </div>
+</div>
+      <div class="detailsbox">
+        {% for events in events %}
+       <marquee><h2 style="color:blue"> {{ events.event_name }} DATE: {{ events.event_date}} </h2></marquee>{% endfor %}
+       <div class="container-fluid heads">
+        <div class="welback">
+          <img class="imggg" src=" {% static 'images/colg.jpg'%}">
+             <h2 style="text-align:center; color:gray">Welcome to
+              Government Arts & Science College
+              PENNAGARAM</h2>
+        </div>
+        <div class="indcontent">
+        {% for ind in ind %}
+        <h4 style="color:block; margin-top:50px">{{ind.texts}}</h4>
+  
+        <h1 style="margin-top:80px"> Clubs :</h1>
+        <p>
+           <h4>
+               The total clubs of the college is: 20
+           </h4>
+           <button class="btnclb " type="button"><a class="abtn" href="{% url 'clubpage'%}">clubs</a></button>
+        </p>
+        {% endfor %}
+      </div>
+       </div>
+       
+      </div>
+</div>
+{% endblock content %}

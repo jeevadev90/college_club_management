@@ -1,0 +1,55 @@
+{% extends 'club/layout/main.html' %}
+{% load static %}
+{% block title %}
+  Home
+{% endblock title %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="container-fluid clublogobar">
+        <a><img class="imgloo" style="border-radius: 6px" src="{{ im.logo.url }}" alt="image" width="180" height="150"></a>
+        <div class="text">
+            {% for name in name %}
+            <h1 id="titles" style="color:blue">{{ name }}</h1><br>{% endfor %}
+        </div>
+    </div>
+
+<br>
+<br>
+<div class="container">
+    <div class="tables">
+       
+        <h6>Club Incharge  : {{ im.incharge_name  }}</h6>
+        <h6>Club Organizer : {{ im.organizer_name  }}</h6>
+        <h6>Boys Incharge  : {{ im.boys_name  }}</h6>
+        <h6>Girls Incharge : {{ im.girls_name  }}</h6>
+      
+        <table class="table">
+            <thead>
+              <tr>
+              
+                <th scope="col">Name</th>
+                <th scope="col">Pone Number</th>
+                <th scope="col">Department</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for mem in mem %}
+              <tr>
+                
+                <td>{{mem.student_name}}</td>
+                <td>{{mem.phone_number}}</td>
+                <td>{{ mem.department.name}}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        
+        
+</div>
+
+<script src="{% static 'js/member.js' %}">
+   
+</script>
+{% endblock content %}
